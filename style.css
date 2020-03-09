@@ -1,0 +1,26 @@
+
+body{
+height:auto;
+}
+#inp{
+border:2px solid #f2f2f2;
+width:150px;
+height:15px;
+}
+#inp:hover{
+background-color:green;
+}
+#inp{
+background-color:#f2f2f2;
+text-transform: uppercase;
+}
+.h{
+padding-left: 420px;
+color:red;
+margin:30px;
+text-transform: uppercase;
+ }
+div {
+padding: 0 130px 80px 399px;
+ }
+  
