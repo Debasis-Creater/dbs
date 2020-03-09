@@ -2,15 +2,21 @@
 body{
 height:auto;
 }
-#inp{
+#inp1,#inp2,#inp3{
 border:2px solid #f2f2f2;
 width:150px;
 height:15px;
 }
-#inp:hover{
+#inp1:hover{
 background-color:green;
 }
-#inp{
+#inp2:hover{
+background-color:green;
+}
+#inp3:hover{
+background-color:green;
+}
+#inp1{
 background-color:#f2f2f2;
 text-transform: uppercase;
 }
