@@ -36,9 +36,6 @@ img{
 img:hover{
     opacity: 1;
 }
-footer{
-    padding:200px 200px 15px 100px;
-}
  address{
      font-weight: 700;
      color:green;
