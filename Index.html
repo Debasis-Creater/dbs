@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="notify.min.js"></script>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<style>
+  .modal-header, h4, .close {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+  </style>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    
+        <ul class="navbar-nav mr-auto mx-0 p- mt-lg-0">
+    
+    
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+    
+          <li class="nav-item active">
+           
+         
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Services
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#" id="hov">Web Devlopment</a>
+                <a class="dropdown-item" href="#" id="hov">Aplication Devlopment</a>
+                <a class="dropdown-item" href="#" id="hov">Mobile Services</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Languages
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item " href="#" id="hov">C#</a>
+                <a class="dropdown-item" href="#" id="hov">MS Sql</a>
+                <a class="dropdown-item" href="#" id="hov">Asp.net</a>
+                <a class="dropdown-item" href="#" id="hov">jQuery</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+    
+        <form class="form-inline my-2 my-lg-0">
+    <div class="container">
+             
+              <!-- Trigger the modal with a button -->
+              <button type="button" class="btn btn-primary" id="myBtn">Register</button>
+            
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                     <h4>Register</h3>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                      <form role="form">
+                        <div class="form-group">
+                          <label for="usrname"><i class="fa fa-user" aria-hidden="true"></i></label>
+                          <input type="text" class="form-control" id="usrname" placeholder="Enter email"  style="margin-left: 2px;"/>
+                        </div>
+                        <div class="form-group">
+                          <label for="psw"><i class="fa fa-child" aria-hidden="true"></i></label>
+                          <input type="text" class="form-control" id="psw" placeholder="Enter age" style="margin-left: 2px;">
+                        </div>
+                       <div class="form-group">
+                         <label for="Address"><i class="fa fa-address-card" aria-hidden="true"></i></label>
+                         <input type="text" class="form-control" id="ads" placeholder="Enter address" style="margin-left: 1px;">
+          
+                       </div>
+                     <button type="submit" class="btn btn-success btn-block">  <i class="fa fa-user-plus" aria-hidden="true"></i> Register</button>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                       <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+          
+              </div> 
+            </div><span class="sr-only">(current)</span></a>
+    
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            SignUp
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                  <i class="fa fa-user" aria-hidden="true"></i> <input type="text" placeholder="name"/><br/>
+                  <i class="fa fa-address-card" aria-hidden="true"></i><input type="text" placeholder="Phone"/><br/>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </form>
+      </div>
+    </nav>
+ <div>
+  <img src="child.jpg" class="img-fluid" alt="Responsive image" style="float: right;">
+   <ol><li id="one"> Study skills, academic skill, or study strategies are approaches applied to learning. They are generally critical to success in school,[1] considered essential for acquiring good grades, and useful for learning throughout one's life.
+  </li><li id="two">
+    Study skills are an array of skills which tackle the process of organizing and taking in new information, retaining information, or dealing with assessments. They include mnemonics, which aid the retention of lists of information; effective reading; concentration techniques and efficient note taking.
+  </li>
+  <li id="three"> More broadly, any skill which boosts a person's ability to study, retain and recall information which assists in and passing exams can be termed a study skill, and this could include time management and motivational techniques.
+  </li>
+  <li id="four"> While often left up to the student and their support network, study skills are increasingly taught in high school and at the university level.</li>
+  <li id="four">Study skills are discrete techniques that can be learned, usually in a short time, and applied to all or most fields of study. They must, therefore, be distinguished from strategies that are specific to a particular field of study (e.g. music or technology), and from abilities inherent in the student, such as aspects of intelligence or learning styles.</li>
+  <li id="four">The term study skills is used for general approaches to learning, skills for specific courses of study. There are many theoretical works on the subject, including a vast number of popular books and websites. Manuals for students have been published since the 1940s</li>
+</ol>
+<img src="covid.jpg" alt="" style="float: left;height: 13%;width: 50%;">
+<p>COVIDSafe first began development shortly after the Morrison Government showed interest in Singapore's TraceTogether app in late March.[21] It was announced that an app was in development on 14 April 2020,[12] with plans to release the app for Android and iOS within a fortnight.[22] The app had a budget of A$2 million.
+  [23] The announcement was immediately met with concerns over privacy, and there was confusion over whether the app would be a feature of the existing Coronavirus Australia app or completely separate.[24][25] Adding to the confusion, many news reports used images of Coronavirus Australia,[26][27] and upon launch the COVIDSafe website linked to the Coronavirus Australia apps.[28]
+
+  The app launched on 26 April 2020, however many users were initially unable to sign-up, with the app failing to send a registration pin to the phone number they provided.[29][30] iPhone users were also noted as having more issues than their Android counterparts, in part because of Apple's more restrictive security requirements.</p>
+   <p>Within 24 hours of COVIDSafe's release more than a million people had downloaded it,[33] and within 48 hours more than two million.[34] By the second week more than four million users had registered.[35] Despite this state and territory health authorities are not yet able to access data collected through the app, although the Department of Health expects the app to be fully operational sometime during the first weeks of May.</p> </div>
+   <hr/>
+   
+   
+  <script>
+  $(document).ready(function(){
+    $("#myBtn").click(function(){
+      $("#myModal").modal();
+    });
+  });
+  </script>
+<script>
+alert("Welcome My Love");
+</script>
+</body>
+</html>
